@@ -1,9 +1,11 @@
-class MP3Importer
+class Song
 
-  attr_accessor :file
+  attr_accessor :name, :artist
 
-  def initialize(file)
-    @file = file
+  def initialize(name)
+    @name = name
   end
+
+
 
 end
