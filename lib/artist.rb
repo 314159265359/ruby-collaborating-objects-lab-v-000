@@ -19,7 +19,7 @@ class Artist
       @@all
     end
 
-    def self.find_or_create_by_name(name)   
+    def self.find_or_create_by_name(name)
       if self.find(name)
         self.find(name)
       else
@@ -37,7 +37,7 @@ class Artist
       artist
     end
 
-    def print_songs
+    def print_songs 
       self.songs.each {|song| song.name}
     end
 
