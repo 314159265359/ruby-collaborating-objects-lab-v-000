@@ -8,9 +8,6 @@ class Artist
     @songs = []
   end
 
-  def self.print_songs
-    puts @songs
-  end
 
 
 end
