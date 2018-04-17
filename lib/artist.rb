@@ -25,6 +25,10 @@ class Artist
         return artist
     end
     end
+    
+    artist = Artist.new(name)
+    artist.save
+    artist
   end
 
     # def self.find_or_create_by_name(name)
