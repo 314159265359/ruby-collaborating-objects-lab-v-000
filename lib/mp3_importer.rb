@@ -1,16 +1,22 @@
 class MP3Importer
+  attr_accessor :path
 
-  # attr_accessor :file
-  #
-  # def initialize(file)
-  #   @file = file
-  # end
+  def initialize(path)
+    @path = path
+  end
+
+  def files
+    files = []
+    Dir.new(self.path).each do |file|
+      files << file if file.length > 4
+    end
+    files
+  end
 
   def import
-   imported_files = self.files
-   imported_files.each do |file|
-     new_song = Song.new_by_filename(file)
-   end
- end
+    self.files.each do |filename|
+      Song.new_by_filename(filename)
+    end
+  end
 
 end
