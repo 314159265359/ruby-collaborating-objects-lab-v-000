@@ -25,6 +25,7 @@ class Artist
         return artist
     end
     end
+  end
 
     # def self.find_or_create_by_name(name)
     #   if self.find(name)
@@ -33,11 +34,11 @@ class Artist
     #     self.create(name)
     #   end
     # end
-    # 
+    #
     # def self.find(name)
     #   self.all.detect { |artist| artist.name == name }
     # end
-    # 
+    #
     # def self.create(name)
     #   artist = Artist.new(name)
     #   artist.save
